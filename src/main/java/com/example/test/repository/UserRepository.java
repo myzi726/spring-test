@@ -1,7 +1,13 @@
 package com.example.test.repository;
 
-import com.example.test.entity.UserVO;
+import com.example.test.entity.User;
 import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
 
-public interface UserRepository extends JpaRepository<UserVO, Long> {
+import java.util.Optional;
+
+@Repository
+public interface UserRepository extends JpaRepository<User, Long> {
+    User save(User user);
+    Optional<User> findByUserId(String userId);
 }

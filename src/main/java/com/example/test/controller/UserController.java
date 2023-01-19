@@ -4,6 +4,7 @@ import com.example.test.repository.UserRequestDto;
 import com.example.test.service.UserService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
 @Slf4j
@@ -24,4 +25,5 @@ public class UserController {
         String result = userService.signup(userDto);
         return result;
     }
+
 }

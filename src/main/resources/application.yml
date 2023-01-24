@@ -4,6 +4,9 @@ spring:
     url: jdbc:mysql://localhost:3306/test?useSSL=false&serverTimezone=Asia/Seoul&characterEncoding=UTF-8
     username: root
     password: haesun2031 # MySQL DB 비밀번호
+  mvc:
+    view:
+      suffix: .html
 
 
   jpa:
@@ -17,6 +20,6 @@ spring:
       hibernate.format_sql: true
       dialect: org.hibernate.dialect.MySQL5InnoDBDialect
 
-logging:
-  level:
-    org.hibernate.SQL: debug
+  logging:
+    level:
+      org.hibernate.SQL: debug

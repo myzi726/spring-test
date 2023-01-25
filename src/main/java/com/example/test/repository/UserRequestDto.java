@@ -1,11 +1,14 @@
 package com.example.test.repository;
 
 import com.example.test.entity.User;
+import lombok.AllArgsConstructor;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+@NoArgsConstructor
+@AllArgsConstructor
 @Getter
-@Setter
 public final class UserRequestDto {
     private String userId;
     private String password;
